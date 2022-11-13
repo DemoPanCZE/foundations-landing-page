@@ -1,29 +1,155 @@
-.hero{
-  background-color: #1F2937;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-nav{
-  background-color: #1F2937;
-  display: flex;
-}
-
-nav ul{
-  display: flex;
-  list-style-type: none;
-}
-
-nav a{
+a {
   text-decoration: none;
+  color: #3882F6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #1F2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 14rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
   font-size: 18px;
   color: #E5E7EB;
 }
 
-.nav strong{
+nav a:hover {
+  color: #3882F6;
+}
+
+header strong {
   font-size: 24px;
   color: #F9FAF8;
+}
+
+/*Hero section*/
+.hero {
+  background-color: #1F2937;
+  display: flex;
+  justify-content: flex-end;
+  padding: 4rem 14rem
+}
+
+.hero-box {
+  max-width: 30rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero-content {
+  display: flex;
 }
 
 .hero img{
   width: 500px;
   height: auto;
+}
+
+.hero h1{
+  font-size: 48px;
+  font-weight: 700;
+  color: #F9FAF8;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #E5E7EB;
+  max-width: 90%;
+}
+
+.hero button {
+  width: 6rem;
+  height: 2rem;
+  background-color: #3882F6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/*Information section*/
+
+.information {
+  text-align: center;
+  padding: 2rem 14rem
+}
+
+.info-title, .author {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1F2937;
+}
+
+.information p {
+  font-size: 16px;
+  color: #1F2937;
+}
+
+.info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem 0;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.info-box p {
+  max-width: 10rem;
+}
+
+.info-box img {
+  max-width: 10rem;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 0.25rem solid #3882F6;
+  border-radius: 1rem;
+}
+
+/*Quote section*/
+
+.quote {
+  background-color: #E5E7EB;
+  padding: 6rem 14rem;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  padding: 3rem 0 0;
+}
+
+.author {
+  font-size: 28px;
+  text-align: right;
 }
